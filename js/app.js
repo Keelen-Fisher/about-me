@@ -4,7 +4,7 @@ console.log('Checking the console');
 
 
 let userWelcome = prompt('Hello! What is your name?')
-alert(`Glad to have you hear ${userWelcome}! Let\'s play a guesing game!`)
+alert(`Glad to have you here ${userWelcome}! Let\'s play a guesing game!`)
 
 
 
