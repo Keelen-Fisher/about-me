@@ -4,16 +4,20 @@ console.log('Checking the console');
 
 
 let userWelcome = prompt('Hello! What is your name?')
+//  Creating an alert: template literal using the back ticks (``)
 alert(`Glad to have you here ${userWelcome}! Let\'s play a guesing game!`)
 
 
-
+//  Breaking this line of code down: using the prompt, you now have a method attached (.toLowerCase) 
 let firstQuestion = prompt('Am I a personal trainer? Yes or No: ').toLowerCase();
+
+// IF/ElSE Statement: the information inside of the parenthesis is the condition.
 if(firstQuestion === 'y' || firstQuestion === 'yes')
 {
   alert(`That\'s right ${userWelcome}!! Look at you go!!`);
 }
 
+// When you use an else if statement, you have to enter a condition inside of a pair of parenthesis.
 else if(firstQuestion === 'n' || firstQuestion === 'no')
 {
   alert(`Dang ${userWelcome}!! You got that one wrong, but you\'ve got 4 more!`);
