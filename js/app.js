@@ -1,7 +1,9 @@
 'use strict';
 
 console.log('Checking the console');
-
+// Keepeing score:
+let score = 0;
+// score++
 
 let userWelcome = prompt('Hello! What is your name?')
 //  Creating an alert: template literal using the back ticks (``)
@@ -95,3 +97,7 @@ else{
 }
 
 alert(`Welcome to my page about me, ${userWelcome}!` );
+
+// 6th question being a loop
+
+// 7th question

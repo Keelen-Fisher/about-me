@@ -1,5 +1,7 @@
+
 body{
   background-color: rgb(165, 235, 165);
+  
 }
 
 
@@ -17,9 +19,11 @@ h3{
 
 p
 {
-margin: 20px;
+  border: 2px solid rgb(102, 102, 201);
+margin-left: 100px;
+margin-right: 100px;
 text-align: center;
-font-size:large;
-color: rgb(4, 87, 87);
+font: size 3vw;;
+color: rgb(0, 0, 0);
 background-color: rgb(248, 173, 61);
 }
