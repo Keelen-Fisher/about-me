@@ -3,7 +3,7 @@
 alert('Checking the console');
 // Keepeing score:
 let score = 0;
-// score++
+
 
 let userWelcome = prompt('Hello! What is your name?')
 //  Creating an alert: template literal using the back ticks (``)
@@ -17,6 +17,7 @@ let firstQuestion = prompt('Am I a personal trainer? Yes or No: ').toLowerCase()
 if(firstQuestion === 'y' || firstQuestion === 'yes')
 {
   alert(`That\'s right ${userWelcome}!! Look at you go!!`);
+  score++
 }
 
 // When you use an else if statement, you have to enter a condition inside of a pair of parenthesis.
@@ -34,6 +35,7 @@ let secondQuestion = prompt('I used to be an Environmental Scientist before I be
 if(secondQuestion === 'y' || secondQuestion === 'yes')
 {
   alert(`Okay ${userWelcome}!! That is correct. Nice!!`);
+  score++
 }
 
 else if(secondQuestion === 'n' || secondQuestion === 'no')
@@ -57,6 +59,7 @@ alert(`That\'s....... not true!! The true answer is boxing!`);
 else if(thirdQuestion === 'n' || thirdQuestion === 'no')
 {
 alert(`That\'s right!! The true answer is boxing!`);
+score++
 
 }
 
@@ -69,6 +72,7 @@ let fourthQuestion = prompt('I am currently from Houston Texas, dream city to wo
 if(fourthQuestion === 'y' || fourthQuestion === 'yes')
 {
   alert(`That's right! Austin is lovely, and that\'s the goal!`);
+  score++
 }
 
 else if(fourthQuestion === 'n' || fourthQuestion === 'no')
@@ -81,10 +85,11 @@ else{
 }
 
 
-let fifthQuestion = prompt('Okay, last one! I have trained for marathons and obstacle course races. Is this true? Yes or No ').toLowerCase();
+let fifthQuestion = prompt('Okay! I have trained for marathons and obstacle course races. Is this true? Yes or No ').toLowerCase();
 if(fifthQuestion === 'y' || fifthQuestion === 'yes')
 {
   alert(`That's right! Wasn't easy, but also fun!! `);
+  score++
 }
 
 else if(fifthQuestion === 'n' || fifthQuestion === 'no')
@@ -112,6 +117,7 @@ while(numTry && !correctAnswerTrueOrFalse){
   if (correctAnswer === correctNumber){
     alert('CORRECT!!! It is 12, great job!! let us move on.')
      correctAnswerTrueOrFalse = true;
+     score++
   }else{
     alert('Sorry, that is wrong!! Try again');
   }
@@ -146,6 +152,7 @@ while (numAttempt && !correctRapperTandF) {
       if (correctAnswer2 === correctRapper[0]) {
         alert('How did you get that?? Are you some mind reader?? You are correct, that is one of them. ')
         correctRapperTandF = true;
+        score++
       } else {
         alert('Sorry, that is wrong!! Try again');
 }
@@ -157,4 +164,7 @@ while (numAttempt && !correctRapperTandF) {
   }
 console.log('exited the while loop');
   
+
+alert('Here\'s your score!! '+  score  + '/7. Thank you for playing!! ');
 // This code was made with the help of Tim Taylor, TA Aaron Imbrock, and TA Tammy Do
+
