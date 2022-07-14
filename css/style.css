@@ -57,3 +57,9 @@ ol
   color: rgb(0, 0, 0);
   background-color: rgb(241, 228, 41);
 }
+
+li {
+  list-style: disc outside none;
+  display: list-item;
+  margin-left: 1em;
+  }
