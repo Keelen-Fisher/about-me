@@ -129,6 +129,10 @@ alert(`The correct number is 12, let\'s keep going ${userWelcome}!!`)
 
 // 7th question
 
+function favRapper(){
+  console.log('Kendrick, Drake, J, Nas, Lauryn, Kanye, Outkast, Jid, and Bun')
+}
+
 let numAttempt = 6;
 let correctRapper = ['kendrick', 'drake', 'j', 'nas', 'noname', 'lauryn', 'kanye', 'outkast', 'jid', 'bun'];
 console.log(correctRapper.length);
@@ -168,3 +172,4 @@ console.log('exited the while loop');
 alert('Here\'s your score!! '+  score  + '/7. Thank you for playing!! ');
 // This code was made with the help of Tim Taylor, TA Aaron Imbrock, and TA Tammy Do
 
+favRapper();
