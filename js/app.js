@@ -1,6 +1,6 @@
 'use strict';
 
-console.log('Checking the console');
+alert('Checking the console');
 // Keepeing score:
 let score = 0;
 // score++
@@ -100,4 +100,61 @@ alert(`Welcome to my page about me, ${userWelcome}!` );
 
 // 6th question being a loop
 
+
+let numTry = 4;
+let correctNumber = '12';
+let correctAnswerTrueOrFalse = false;
+
+while(numTry && !correctAnswerTrueOrFalse){
+  let correctAnswer = prompt(`Alright ${userWelcome}, let\'s play a guessing game!! Guess my favorite number? Between 1-20  `);
+  numTry--;
+
+  if (correctAnswer === correctNumber){
+    alert('CORRECT!!! It is 12, great job!! let us move on.')
+     correctAnswerTrueOrFalse = true;
+  }else{
+    alert('Sorry, that is wrong!! Try again');
+  }
+}
+
+alert(`The correct number is 12, let\'s keep going ${userWelcome}!!`)
+
+// This code was made with the help of Tim Taylor, TA Aaron Imbrock, and TA Tammy Do
+
 // 7th question
+
+let numAttempt = 6;
+let correctRapper = ['kendrick', 'drake', 'j', 'nas', 'noname', 'lauryn', 'kanye', 'outkast', 'jid', 'bun'];
+console.log(correctRapper.length);
+let correctRapperTandF = false;
+
+for (let i=0; i < correctRapper.length; i++){
+  console.log(correctRapper[i]);
+}
+let correctAnswer2;
+
+while (numAttempt && !correctRapperTandF) {
+  console.log(correctRapperTandF);
+  correctAnswer2 = prompt('I love rap music, and I have a top 10 rappers list like many others do. Can you guess one of my favorite rappers of all time? You have SIX attempts this time! Hint: ONLY use their first name for input.').toLowerCase();
+  console.log(correctAnswer2);
+  correctRapperTandF = true;
+
+  numAttempt--;
+
+    
+  
+      if (correctAnswer2 === correctRapper[0]) {
+        alert('How did you get that?? Are you some mind reader?? You are correct, that is one of them. ')
+        correctRapperTandF = true;
+      } else {
+        alert('Sorry, that is wrong!! Try again');
+}
+    }
+  
+     alert('Well you worked this hard to learn more about me, here\'s the full list of my fave rapppers:')
+     for (let i=0; i < correctRapper.length; i++){
+      alert(correctRapper[i]);
+  }
+console.log('exited the while loop');
+  
+// This code was made with the help of Tim Taylor, TA Aaron Imbrock, and TA Tammy Do
