@@ -2,9 +2,8 @@
 
 alert('Checking the console');
 // Keepeing score:
-let score = 0;
-
 let userWelcome = prompt('Hello! What is your name?')
+let score = 0;
 // Creating First Function
 function questionOne()
 {
@@ -124,7 +123,7 @@ alert(`Welcome to my page about me, ${userWelcome}!` );
 
 // 6th question being a loop
 
-
+function questionSix(){
 let numTry = 4;
 let correctNumber = '12';
 let correctAnswerTrueOrFalse = false;
@@ -141,12 +140,14 @@ while(numTry && !correctAnswerTrueOrFalse){
     alert('Sorry, that is wrong!! Try again');
   }
 }
-
+}
+questionSix();
 alert(`The correct number is 12, let\'s keep going ${userWelcome}!!`)
-
 // This code was made with the help of Tim Taylor, TA Aaron Imbrock, and TA Tammy Do
 
+
 // 7th question
+
 
 let numAttempt = 6;
 let correctRapper = ['kendrick', 'drake', 'j', 'nas', 'noname', 'lauryn', 'kanye', 'outkast', 'jid', 'bun'];
