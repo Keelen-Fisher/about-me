@@ -4,11 +4,10 @@ alert('Checking the console');
 // Keepeing score:
 let score = 0;
 
-
+let userWelcome = prompt('Hello! What is your name?')
 // Creating First Function
 function questionOne()
 {
-  let userWelcome = prompt('Hello! What is your name?')
   //  Creating an alert: template literal using the back ticks (``)
   alert(`Glad to have you here ${userWelcome}! Let\'s play a guesing game!`)
 
