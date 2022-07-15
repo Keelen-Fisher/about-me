@@ -148,7 +148,7 @@ alert(`The correct number is 12, let\'s keep going ${userWelcome}!!`)
 
 // 7th question
 
-
+function questionSeven(){
 let numAttempt = 6;
 let correctRapper = ['kendrick', 'drake', 'j', 'nas', 'noname', 'lauryn', 'kanye', 'outkast', 'jid', 'bun'];
 console.log(correctRapper.length);
@@ -182,6 +182,10 @@ while (numAttempt && !correctRapperTandF) {
      for (let i=0; i < correctRapper.length; i++){
       alert(correctRapper[i]);
   }
+
+}
+questionSeven();
+
 console.log('exited the while loop');
   
 
