@@ -126,23 +126,31 @@ alert(`Welcome to my page about me, ${userWelcome}!` );
 function questionSix(){
 let numTry = 4;
 let correctNumber = '12';
-let correctAnswerTrueOrFalse = false;
+// let correctAnswerTrueOrFalse = false;
 
-while(numTry && !correctAnswerTrueOrFalse){
+while(numTry){
   let correctAnswer = prompt(`Alright ${userWelcome}, let\'s play a guessing game!! Guess my favorite number? Between 1-20  `);
-  numTry--;
 
   if (correctAnswer === correctNumber){
-    alert('CORRECT!!! It is 12, great job!! let us move on.')
-     correctAnswerTrueOrFalse = true;
+    alert('CORRECT!!! It is 12, great job!! let us move on.');
+    //  correctAnswerTrueOrFalse = true;
      score++
-  }else{
-    alert('Sorry, that is wrong!! Try again');
+  }else if(correctAnswer > correctNumber)
+  {
+    alert('Ah, that is too high!! Try again. ');
+  }
+
+  else if(correctAnswer < correctNumber){
+    alert('Ah, that is too low!! Try again. ');
+  }
+  numTry--;
+  if(numTry === 0){
+    alert(`The correct number is 12, let\'s keep going ${userWelcome}!!`);
   }
 }
 }
 questionSix();
-alert(`The correct number is 12, let\'s keep going ${userWelcome}!!`)
+
 // This code was made with the help of Tim Taylor, TA Aaron Imbrock, and TA Tammy Do
 
 
