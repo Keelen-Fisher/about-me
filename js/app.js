@@ -5,105 +5,86 @@ alert('Checking the console');
 let score = 0;
 
 
-// Creating First Function
-function questionOne()
+let userWelcome = prompt('Hello! What is your name?')
+//  Creating an alert: template literal using the back ticks (``)
+alert(`Glad to have you here ${userWelcome}! Let\'s play a guesing game!`)
+
+
+//  Breaking this line of code down: using the prompt, you now have a method attached (.toLowerCase) 
+let firstQuestion = prompt('Am I a personal trainer? Yes or No: ').toLowerCase();
+
+// IF/ElSE Statement: the information inside of the parenthesis is the condition.
+if(firstQuestion === 'y' || firstQuestion === 'yes')
 {
-  let userWelcome = prompt('Hello! What is your name?')
-  //  Creating an alert: template literal using the back ticks (``)
-  alert(`Glad to have you here ${userWelcome}! Let\'s play a guesing game!`)
-
-
-  //  Breaking this line of code down: using the prompt, you now have a method attached (.toLowerCase) 
-  let firstQuestion = prompt('Am I a personal trainer? Yes or No: ').toLowerCase();
-
-  // IF/ElSE Statement: the information inside of the parenthesis is the condition.
-  if(firstQuestion === 'y' || firstQuestion === 'yes')
-  {
-    alert(`That\'s right ${userWelcome}!! Look at you go!!`);
-    score++
-  }
-
-  // When you use an else if statement, you have to enter a condition inside of a pair of parenthesis.
-  else if(firstQuestion === 'n' || firstQuestion === 'no')
-  {
-    alert(`Dang ${userWelcome}!! You got that one wrong, but you\'ve got 4 more!`);
-  } 
-
-  else
-  {
-    alert(`Incorrect input!! Only Yes or No.`)
-  }
+  alert(`That\'s right ${userWelcome}!! Look at you go!!`);
+  score++
 }
-questionOne();
 
-
-// Creating Second Function
-function questionTwo(){
-  let secondQuestion = prompt('I used to be an Environmental Scientist before I became a Software Developer. Is this true? Yes or No').toLowerCase();
-  if(secondQuestion === 'y' || secondQuestion === 'yes')
-  {
-    alert(`Okay ${userWelcome}!! That is correct. Nice!!`);
-    score++
-  }
-
-  else if(secondQuestion === 'n' || secondQuestion === 'no')
-  {
-    alert(`That's acutally wrong ${userWelcome}, that was a difficult one though!`);
-  }
-
-  else{
-    alert(`Incorrect input!! Only Yes or No.`)
-  }
-}
-questionTwo();
-
-
-// Creating Third Function
-function questionThree()
+// When you use an else if statement, you have to enter a condition inside of a pair of parenthesis.
+else if(firstQuestion === 'n' || firstQuestion === 'no')
 {
-  let thirdQuestion = prompt('I am HEAVILY into Soccer, go Arsenal!! Is this true? Yes or No').toLowerCase();
-  if(thirdQuestion === 'y' || thirdQuestion === 'yes')
-
-    {
-      alert(`That\'s....... not true!! The true answer is boxing!`);
-    }
-
-    else if(thirdQuestion === 'n' || thirdQuestion === 'no')
-    {
-      alert(`That\'s right!! The true answer is boxing!`);
-      score++
-    }
-
-    else
-    {
-      alert(`Incorrect input!! Only Yes or No.`)
-    }
+  alert(`Dang ${userWelcome}!! You got that one wrong, but you\'ve got 4 more!`);
 }
-questionThree();
+
+else{
+  alert(`Incorrect input!! Only Yes or No.`)
+}
 
 
-function questionFour()
+let secondQuestion = prompt('I used to be an Environmental Scientist before I became a Software Developer. Is this true? Yes or No').toLowerCase();
+if(secondQuestion === 'y' || secondQuestion === 'yes')
 {
-  let fourthQuestion = prompt('I am currently from Houston Texas, dream city to work remotely is Austin. Is this true? Yes or No ').toLowerCase();
-  if(fourthQuestion === 'y' || fourthQuestion === 'yes')
-  {
-    alert(`That's right! Austin is lovely, and that\'s the goal!`);
-    score++
-  }
-
-  else if(fourthQuestion === 'n' || fourthQuestion === 'no')
-    {
-    alert(`That's incorrect! I\'m Born and raised in Houston Texas. `);
-    }
-
-  else
-    {
-    alert(`Incorrect input!! Only Yes or No.`)
-    }
+  alert(`Okay ${userWelcome}!! That is correct. Nice!!`);
+  score++
 }
-questionFour();
 
-function questionFive(){
+else if(secondQuestion === 'n' || secondQuestion === 'no')
+{
+  alert(`That's acutally wrong ${userWelcome}, that was a difficult one though!`);
+}
+
+else{
+  alert(`Incorrect input!! Only Yes or No.`)
+}
+
+
+
+let thirdQuestion = prompt('I am HEAVILY into Soccer, go Arsenal!! Is this true? Yes or No').toLowerCase();
+if(thirdQuestion === 'y' || thirdQuestion === 'yes')
+{
+alert(`That\'s....... not true!! The true answer is boxing!`);
+
+}
+
+else if(thirdQuestion === 'n' || thirdQuestion === 'no')
+{
+alert(`That\'s right!! The true answer is boxing!`);
+score++
+
+}
+
+else{
+  alert(`Incorrect input!! Only Yes or No.`)
+}
+
+
+let fourthQuestion = prompt('I am currently from Houston Texas, dream city to work remotely is Austin. Is this true? Yes or No ').toLowerCase();
+if(fourthQuestion === 'y' || fourthQuestion === 'yes')
+{
+  alert(`That's right! Austin is lovely, and that\'s the goal!`);
+  score++
+}
+
+else if(fourthQuestion === 'n' || fourthQuestion === 'no')
+{
+alert(`That's incorrect! I\'m Born and raised in Houston Texas. `);
+}
+
+else{
+  alert(`Incorrect input!! Only Yes or No.`)
+}
+
+
 let fifthQuestion = prompt('Okay! I have trained for marathons and obstacle course races. Is this true? Yes or No ').toLowerCase();
 if(fifthQuestion === 'y' || fifthQuestion === 'yes')
 {
@@ -119,7 +100,7 @@ else if(fifthQuestion === 'n' || fifthQuestion === 'no')
 else{
   alert(`Incorrect input!! Only Yes or No.`)
 }
-}
+
 alert(`Welcome to my page about me, ${userWelcome}!` );
 
 // 6th question being a loop
@@ -147,6 +128,10 @@ alert(`The correct number is 12, let\'s keep going ${userWelcome}!!`)
 // This code was made with the help of Tim Taylor, TA Aaron Imbrock, and TA Tammy Do
 
 // 7th question
+
+function favRapper(){
+  console.log('Kendrick, Drake, J, Nas, Lauryn, Kanye, Outkast, Jid, and Bun')
+}
 
 let numAttempt = 6;
 let correctRapper = ['kendrick', 'drake', 'j', 'nas', 'noname', 'lauryn', 'kanye', 'outkast', 'jid', 'bun'];
@@ -187,3 +172,4 @@ console.log('exited the while loop');
 alert('Here\'s your score!! '+  score  + '/7. Thank you for playing!! ');
 // This code was made with the help of Tim Taylor, TA Aaron Imbrock, and TA Tammy Do
 
+favRapper();
